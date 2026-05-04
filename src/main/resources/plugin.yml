@@ -1,0 +1,23 @@
+name: PrefixBuy
+version: '1.0'
+main: ru.florestdev.prefixBuy.PrefixBuy
+api-version: '1.21'
+prefix: PrefixBuy
+load: STARTUP
+authors: [ FlorestDev ]
+description: Private FlorestMC's plugin on Custom prefixes!
+folia-supported: true
+
+softdepend:
+  - Vault
+  - LuckPerms
+
+commands:
+  prefix:
+    description: Main command
+    permission: prefix.use
+
+permissions:
+  prefix.use:
+    description: Main Permission
+    default: not op
